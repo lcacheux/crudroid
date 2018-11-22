@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Example Room</string>
+    <string name="articles">Articles</string>
+    <string name="customers">Customers</string>
+</resources>

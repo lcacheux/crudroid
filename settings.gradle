@@ -1,0 +1,1 @@
+include ':crud-lib', ':example-room', ':example'
