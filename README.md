@@ -23,6 +23,23 @@ dependencies :
 Usage
 -----
 
+Crudroid is available on Maven Central, so you can add it as a dependency. In your root build.gradle
+file, add mavenCentral():
+```groovy
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+```
+
+In your module build.gradle file, add crudroid:
+```groovy
+dependencies {
+    implementation 'net.cacheux.crudroid:crudroid:0.1.0'
+}
+```
+
 Declare a new activity in your application which will inherit __CrudActivity<T>__ with T as the
 model class you want to manage. You'll have to override three abstract methods :
 * _getListAdapter_: It must provide an instance of __CrudListAdapter<T>__, which is a
